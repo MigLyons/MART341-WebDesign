@@ -1,7 +1,7 @@
 what is an advantage to using a text editor? 
 
-	The advantage to using a text editor is the ability to write in an environment 	designed to help prevent and correct errors. Text editors format input in a human-	readable way, as well as often including tools specific to a particular writing 	application. For instance, Microsoft word makes it easy to add bibliographies 	formatted in various ways, and IntelliJ provides shortcuts to preform common 	programming acts, like importing packages.
+	The advantage to using a text editor is the ability to write in an environment 	designed to help prevent and correct errors. Text editors format input in a human-readable way, as well as often including tools specific to a particular writing application. For instance, Microsoft word makes it easy to add bibliographies formatted in various ways, and IntelliJ provides shortcuts to preform common programming acts, like importing packages.
 
 Is there an advantage of using a relative vs an absolute URL?
-	The advantages of using a relative vs an absolute URL vary based on application. 	Absolute URLS can be referenced from anywhere on the internet, so one site can link 	to another, unrelated site; or I can send my friend a specific product posting from 	an e-commerce site.
-	Relative URLS are shorter and more convenient, but they cannot be referenced except 	within their own path. This means they're convenient for backend work, but pointless 	for end users. 
+	The advantages of using a relative vs an absolute URL vary based on application. Absolute URLS can be referenced from anywhere on the internet, so one site can link to another, unrelated site; or I can send my friend a specific product posting from an e-commerce site.
+Relative URLS are shorter and more convenient, but they cannot be referenced except within their own path. This means they're convenient for backend work, but pointless for end users. 
