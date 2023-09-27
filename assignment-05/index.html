@@ -1,0 +1,91 @@
+<head>
+    <title>Assignment 05</title>
+</head>
+<p> rem Introduction to SQL
+    rem after installing Oracle 12 C (Enterprise Edition)
+    rem get to the command line
+    rem Win R
+    rem then type cmd
+    cmd
+    rem then type 
+    sqlplus sys as sysdba
+    rem on the prompt line
+    rem Enter you password (the one you used when you created you database and wrote down)
+    rem You should get a SQL> return line
+    rem enter show user
+    rem you should get 
+    USER IS SYS
+    rem turn on spool file and echo commands
+    spool IntroSQL
+    set echo on
+    rem Enter the following -- this is critical for nameing.  Without this create user mike wil be c##mike; withthis mike 
+    alter session set "_oracle_script"=true;
+    rem you should now create your master account user; this user will have rights to sysdba and create session and dba; the idea is not to use the sys account again
+    drop user Larry;
+    create user Larry identified by l;
+    grant create session to Larry;
+    grant dba to Larry;
+    grant sysdba to Larry;
+    show user;
+    rem connect to larry
+    connect Larry/l;
+    show user
+    rem you should get USER IS LARRY returned
+    rem You should be all set to try sql commands
+    drop table STUDENT;					
+    create table STUDENT					
+        (STUDENTID number (3) not null,
+        NAME VARchar(10),
+        MAJOR VARchar(16),
+        STATUS VARchar(2),
+        ADDRESS varchar(12),
+        GPA number(3,2)
+        )
+        ;
+</p>
+<hr />
+<h2>rem Introduction to SQL </h2>
+<p>
+    rem after installing Oracle 12 C (Enterprise Edition) <br />
+    rem get to the command line <br />
+    rem Win R <br />
+    rem then type cmd <br />
+    cmd <br />
+    rem then type <br />
+    sqlplus sys as sysdba <br />
+    rem on the prompt line <br />
+    rem Enter you password (the one you used when you created you database and wrote down) <br />
+    rem You should get a SQL> return line <br />
+    rem enter show user <br />
+    rem you should get USER IS SYS <br />
+    rem turn on spool file and echo commands <br />
+    spool IntroSQL <br />
+    set echo on <br />
+    rem Enter the following -- this is critical for nameing.  Without this create user mike wil be c##mike; with this mike <br />
+    alter session set "_oracle_script"=true; <br />
+    rem you should now create your master account user; this user will have rights to sysdba and create session and dba; the idea is not to use the sys account again <br />
+    drop user Larry; <br />
+    create user Larry identified by l; <br />
+    grant create session to Larry; <br />
+    grant dba to Larry; <br />
+    grant sysdba to Larry; <br />
+    show user; <br />
+    rem connect to larry <br />
+    connect Larry/l; <br />
+    show user <br />
+    rem you should get USER IS LARRY returned <br />
+    rem You should be all set to try sql commands <br />
+    drop table STUDENT;	
+    <pre>create table STUDENT
+        (STUDENTID number (3) not null,
+         NAME VARchar(10),
+         MAJOR VARchar(16),
+         STATUS VARchar(2),
+         ADDRESS varchar(12),
+         GPA number(3,2)
+         )
+         ; 
+        </pre> 
+    </p>
+<a href="cat.html">click to see the prettiest cat in the world</a>
+         
