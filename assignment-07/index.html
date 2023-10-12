@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta chartset="UTF-8">
+        <meta name="description" content="a form page that allows users to submit comments">
+        <meta name="author" content="Madeleine Gallegos Lyons">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>The Void</title>
+        <style>
+            body {background-color:black;}
+            p {color:gold;}
+            h1 {color:gold;}
+            h2 {color:gold;}
+            span {color: gold;}
+        </style>
+    </head>
+    <body>
+        
+        <h1> <img src="assets/img/48.png" alt="clipart silouette of the moon" title="void-logo-img" width="32" height="32">The Void</h1>
+        <h2>Want to commune with the void? Choose your method of communcation, write your note, and send it out.</h2>
+        <form action="/assignment-07/blackmailMaterial.php" method="get" id="complaint-form" class="basic-forms">
+        <p>Choose:</p>
+        <input type="radio" name="commMethod" value="scream"/> <span>Scream</span>
+        <br />
+        <input type="radio" name="commMethod" value="whisper"/> <span>Whisper</span>
+        <br />
+        <input type="radio" name="commMethod" value="hoot"/> <span>Hoot</span>
+        <br />
+        <input type="radio" name="commMethod" value="holler"/><span>Holler</span>
+        <br />
+        <input type="radio" name="commMethod" value="sob"/><span>Sob</span>
+        <br />
+        <input type="radio" name="commMethod" value="shout"/><span>Shout</span>
+        <br />
+        <input type="radio" name="commMethod" value="threaten"/><span>Threaten</span>
+        <br /><br /><br />
+    
+
+        <textarea name="complaint" id="complaint-textarea" cols="75" rows="4" placeholder="Write your note to the Void" 
+        maxlength="1000"></textarea>
+        <br />
+        <input type="submit" value="Submit" style="color:gold">
+        </form>
+        <h2>Your message will be recieved. Do not expect acknowledgement from the void.</h2>
+    </body>
