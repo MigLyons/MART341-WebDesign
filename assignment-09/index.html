@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta chartset="UTF-8">
+        <meta name="description" content="how-to on using oracle roles for security in sql">
+        <meta name="author" content="Madeleine Gallegos Lyons">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Roles for Security</title>
+        <style>
+            img {height:200px }
+            h1, .stepHeader, p {text-align: center; font-family: 'Retro Computer', sans-serif; color:green}
+            h6, h2, .supplyItem {font-family: 'Retro Computer', sans-serif; color:green}
+            .imgCon {display: block;
+                    margin-left: auto;
+                    margin-right: auto;}
+            body {background-color: black;}
+            .navBar {background-color: darkgreen; text-align: center;}
+            .navItem {display: inline; padding:5px;}
+
+        </style>
+        <link href="https://fonts.cdnfonts.com/css/retro-computer" rel="stylesheet">
+        <link href="#" rel="icon">
+    </head>
+    <body>
+        <div>
+            <nav id="main">
+                <ul class="navBar">
+                    <li class="navItem"><a href="./index.html">Home</a></li>
+                    <li class="navItem"><a href="./resources.html">Resources</a></li>
+                    <li class="navItem"><a href="./about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <br/>
+        <h1>Using Oracle roles for database security</h1>
+        <h6>By Madeleine Gallegos Lyons | 5/5 stars</h6>
+        </div>
+
+        <div id="intro-blurb">
+            <p>
+                Assigning access controls for a table X to every user Y in a database Z can be a huge task. For example, in a database
+                with 5 users and 15 tables, 5*15 means <b>75 times</b> a database admin might have to use the command <pre class="stepHeader"
+                >SQL> grant select on X to Y;</pre>
+            </p>
+            <p>
+                Oracle roles provide an option for granting access to a table en masse without violating the principle of least privilege.
+                Roles can be created, granted privileges, and then assigned to users as needed.  
+            </p>
+        </div>
+        <div id="supplies">
+            <h2>Supplies:</h2>
+            <ul>
+                <li class="supplyItem">Oracle Database 19c or latest distribution</li>
+                <li class="supplyItem">Access to command line</li>
+            </ul>
+        </div>
+        <h2 class="stepHeader">Step 1: Have a table and users</h2>
+        <p>If you have tables and users already created, feel free to use those. If not, here is some reference code to get started.</p>
+            <img src="assets/img/createtable.png" alt="Code to create a table in SQL" class="imgCon"/> <br/>
+            <img src="assets/img/populatetable.png" alt="Code to populate a table called faculty in SQL" class="imgCon"/> <br/>
+            <img src="assets/img/createusers.png" alt="Code to create users in SQL" class="imgCon"/>
+        <br/>
+        <h2 class="stepHeader">Step 2: Create roles</h2>
+        <p>Roles should be based on job description - for instance, an Human Resources manager might need access to employee  tables but 
+            not customer data.</p>
+            <img src="assets/img/createroles.png" alt="Code to create and assign roles in SQL" class="imgCon" />
+        <br/>
+        <h2 class="stepHeader">Step 3: Test roles</h2>
+        <p>Double check that your roles work as intended. In this example, faculty members should only be able to see the faculty table
+             and not the student table.</p>
+            <img src="assets/img/roleswork.png" alt="Code showing a query from a user with faculty role to student and faculty 
+            tables. Only the faculty table query works." class="imgCon"/>
+        <br/>
+    </body>

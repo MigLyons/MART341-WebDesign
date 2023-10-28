@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta chartset="UTF-8">
+        <meta name="description" content="additional resources on using oracle roles for security in sql">
+        <meta name="author" content="Madeleine Gallegos Lyons">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>About</title>
+        <style>
+            h1, p, h2 {text-align: center; font-family: 'Retro Computer', sans-serif; color:green}
+            body {background-color: black;}
+            .navBar {background-color: darkgreen; text-align: center;}
+            .navItem {display: inline; padding:5px;}
+            li {font-family: 'Retro Computer', sans-serif; color:green}
+
+
+        </style>
+        <link href="https://fonts.cdnfonts.com/css/retro-computer" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <nav id="main">
+                <ul class="navBar">
+                    <li class="navItem"><a href="./index.html">Home</a></li>
+                    <li class="navItem"><a href="./resources.html">Resources</a></li>
+                    <li class="navItem"><a href="./about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <br/>
+        <h1>About:</h1>
+        <nav id="about" style="text-align: center;">
+            <a href="#credentials">My credentials</a> &vert;
+            <a href="#how-to">This tutorial</a> &vert;
+            <a href="#concept">Roles and beyond</a> &vert;
+            <a href="#webpage">This page</a>
+        </nav>
+        <div id="credentials">
+            <h2>Me</h2>
+            <ul>
+                <li>I am a 4th year student at University of Montana</li> <br/>
+                <li>My major is Computer Science</li> <br/>
+                <li>I learned about using Roles and Views for security in my Database Security class 3 weeks ago</li> <br/>
+                <li>Therefore I feel qualified to explain them to you</li>
+            </ul>
+        </div>
+        <div id="how-to">
+            <h2>This how-to</h2>
+            <ul>
+                <li>This tutorial <i>does not</i> include the inital database software set-up.</li><br/>
+                <li>All the code in this tutorial works</li><br/>
+                <li>The images in this tutorial were ethically sourced from my organic cruelty free Database Security lab from 3 weeks ago</li><br/>
+                <li>Users in this how-to were created with the command "alter session set "_ORACLE_SCRIPT"=true;", which is considered 
+                    bad practice as it creates a local user which cannot access pluggable databases. However, for the purpose of 
+                    learning and demonstration it does make the code more readable.</li>
+            </ul>
+        </div>
+        <div id="concept">
+            <h2>The concept</h2>
+            <ul>
+                <li>Roles on their own are not especially robust as far as security goes</li><br/>
+                <li>User-end security like roles can be circumvented in a variety of ways - 
+                    object-end security measures are more reliable</li><br/>
+                <li>Roles are usually used in tandem with Oracle Views, which allow column level
+                     access control to tables</li><br/>
+                <li>I am not responsible for any security issues resulting from your use of Oracle Roles</li>
+            </ul>
+        </div>
+        <div id="webpage">
+            <h2>This webpage</h2>
+            <ul>
+                <li>Font credit to <a href="https://www.cdnfonts.com/retro-computer.font">CDN Fonts Retro Computer Font Family</a></li><br/>
+                <li>The rest credit to Me</li>
+
+            </ul>
+        </div>
+
+    </body>
