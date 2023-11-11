@@ -1,0 +1,60 @@
+.paragraph::first-letter{
+    font-family: 'Kallem';
+    font-weight:bold;
+    font-size: 2.5em;
+    color:crimson;
+    vertical-align:middle;
+    
+    
+}
+
+.paragraph {
+    line-height: 1.5em;
+    color:saddlebrown;
+}
+
+.reference{
+    padding-left: 22px;
+    text-indent: -22px;
+}
+
+body {
+    font-family: 'Rosmatika', sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+    background-color: antiquewhite;
+    margin: 30px;
+    line-height: 1.5em;
+
+}
+
+a {
+    text-transform: none;
+}
+
+a:hover {
+    text-transform: uppercase;
+    color:crimson;
+}
+
+
+#bibliography {
+    margin: 40px;
+    line-height: 1em;
+    text-align: left;
+}
+
+.title {
+    font-style: italic;
+    color:darkblue;
+}
+
+#bibliographyHeader {
+    text-align: center;
+}
+
+h1, h2{
+    color:darkgreen;
+    line-height: 2em;
+}

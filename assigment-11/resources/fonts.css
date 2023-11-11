@@ -1,0 +1,21 @@
+/* Webfont: Rosmatika-Regular */@font-face {
+    font-family: 'Rosmatika';
+    src: url('fonts/Rosmatika.woff2') format('woff2'), /* Modern Browsers */
+         url('fonts/Rosmatika.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Kallem */@font-face {
+    font-family: 'Kallem';
+    src:
+         url('fonts/Kallem.woff') format('woff'), /* Modern Browsers */
+         url('fonts/Kallem.woff2') format('woff2'), /* Modern Browsers */
+         url('fonts/Kallem.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: italic;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+
