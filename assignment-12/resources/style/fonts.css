@@ -1,0 +1,7 @@
+/* Webfont: Rosmatika-Regular */@font-face {
+    font-family: 'DriedPlumsBlack';
+    src: url('../fonts/STDriedPlums-Black.otf') format('opentype');
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
