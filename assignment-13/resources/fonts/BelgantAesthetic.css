@@ -1,0 +1,11 @@
+/* Webfont: BelganAesthetic-Regular */@font-face {
+    font-family: 'BelganAesthetic';
+    src: url('BelgantAesthetic.eot'); /* IE9 Compat Modes */
+    src: url('BelgantAesthetic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('BelgantAesthetic.woff') format('woff'), /* Modern Browsers */
+         url('BelgantAesthetic.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
