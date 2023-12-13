@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta chartset="UTF-8">
+        <meta name="description" content="#">
+        <meta name="author" content="Madeleine Gallegos Lyons">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Burning Pile</title>
+        <link href="img/logo.png" rel="icon">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/btns.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Burning Pile
+                  </a>              
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="index.html">Fire</a>
+                  <a class="nav-link" href="artist.html">Artist</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    <main>
+        <div id="burning-pile-player" >
+            <iframe scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1280673&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>   
+        </div> 
+        <div id="fire">
+            <canvas id="pile" height="400" width="400"></canvas>
+            <script src="js/fire.js"></script>
+        </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Throw your troubles on the burning pile:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <button type="button" class="btn btn-outline-danger">Throw</button>
+          </div>
+    </main>
+    </body>
+</html>
+
+
